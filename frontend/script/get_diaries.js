@@ -12,10 +12,10 @@ function noContents() {}
 fetching_data();// 1.데이터를 서버로 부터 가져오는 명령 실행
 
 function updateDOM(diaries) {
-    let template = "";
+    let template = [];
     document.querySelector("#count").innerText = diaries.length;
     for (let dairy of diaries) {
-        template += `
+        template.push( `
         <article class = "d-flex my-1 bg-white justify-center items-center border-1 radius-1">
             <div class = "flex-1 text-center">
             <div class = "roundids-box py-1 mx-1 radius-1 d-flex column text-white">
@@ -32,7 +32,7 @@ function updateDOM(diaries) {
                 </button>    
             </div>
         </article>
-`;
+`);
 }
     section.innerHTML = template;
 }
