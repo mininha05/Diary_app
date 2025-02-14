@@ -1,0 +1,134 @@
+@charset "utf-8";
+
+:root {
+    --primary-bg : white;
+    --primary-shadow : #000;
+    --secoundary-bg : gray;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 20px;
+}
+
+body {
+    font-size: 1rem;
+    font-family:   "Maven Pro" serif;
+    font-family: "Hi Melody", serif;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.my-1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.p-0 {
+    padding: 0;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.bg-white {
+    background-color: var(--primary-bg);
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.flex-1 {
+    flex: 1;
+}
+.flex-3 {
+    flex: 3;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.border-1 {
+    border: 1px solid;
+}
+
+.radius-1 {
+    border-radius: 5px;
+}
+
+.py-1 {
+    padding-top: .5rem;
+    padding-bottom:.5rem;
+}
+.mx-1 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.roundids-box {
+    background-color: var(--secoundary-bg);
+}
+.gap-1 {
+    gap: 1rem;
+}
+
+.flex-end {
+    justify-content: end;
+}
+
+.text-white {
+    color: var(--primary-bg);
+}
+
+.font-small {
+    font-size: .8rem;
+}
+
+.font-big {
+    font-size: 1.5rem;
+}
+.btn {
+    background-color: var(--secoundary-bg) !important;
+    border-color: var( --secoundary-bg) !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100px;
+    height: 50px;
+    font-size: 1rem;
+    color: white;
+}
+
+.btn:hover {
+    background-color: var(--secoundary-bg) !important;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+article {
+    width: 700px;
+    margin: 0 auto;
+}
+
+#gnb a, #gnb li {
+    color: var(--primary-shadow);
+    text-decoration: none;
+    list-style: none;
+}
+
+#gnb a:hover {
+    color: rgb(96, 192, 160);
+    transition: color 0.2s;
+}

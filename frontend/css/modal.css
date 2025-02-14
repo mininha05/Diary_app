@@ -1,0 +1,42 @@
+@charset "utf-8";
+form {
+    border: 0;
+    box-shadow: none;
+}
+fieldset {
+    border: 0;
+}
+
+legend {
+    display: none;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, .4);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9998;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+.content {
+    position: absolute;
+    background-color: white;
+    width: 800px;
+    height: 600px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input:focus, textarea:focus {
+    outline: none;
+}
+
+.mr-1 {
+    margin-right: 25px;
+}
+

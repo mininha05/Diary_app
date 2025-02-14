@@ -1,12 +1,45 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon_icon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css">
+    <link rel="stylesheet" href="css/modal.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>My Daily Note | Daily Home</title>
 </head>
+
 <body>
-    <script src="script/main.js"></script>
+    
+    <header>
+        <div id="header_main">
+            <div class="logo">
+                <a href="index.html">
+                <img src="images/logo (2).png" alt="logo">
+                </a>
+            </div>
+            <ul id="gnb" class="d-flex justify-center gap-1">
+                <li><a href="index.html">처음으로</a></li>
+                <li><a href="diary.html">일기장보기</a></li>
+                <li><a href="add.html">일기장쓰기</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <header class="p-0">
+            총 <span id="count">3</span>건의 읽기 목록이 존재합니다
+        </header>
+        <section id="articles" class="column">
+        </section>
+    </main>
+    <footer>
+        <p>&copy; copyright yeonghun.</p>
+    </footer>
+    <script src="script/get_diaries.js"></script>
 </body>
+
 </html>

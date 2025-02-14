@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html><!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css">
+    <link rel="shortcut icon" href="images/favicon_icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>My Daily Note | Daily Home</title>
+</head>
+
+<body>
+    <header>
+        <div id="header_main">
+            <div class="logo">
+                <a href="index.html">
+                <img src="images/logo (2).png" alt="logo">
+                </a>
+            </div>
+            <ul id="gnb" class="d-flex justify-center gap-1">
+                <li><a href="index.html">처음으로</a></li>
+                <li><a href="diary.html">일기장보기</a></li>
+                <li><a href="add.html">일기장쓰기</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <h1 class="d-flex justify-center">일기장 | 쓰기</h1>
+        <form id="add_form" >
+            <fieldset>
+                <legend>일기</legend>
+                <div class="d-flex justify-between">
+                    <div class="d-flex flex-1">
+                        <label for="date_time" class=" flex-1 justify-between">일시</label>
+                        <input type="date" name="date_time" class="flex-1"  id="date_time">
+                    </div>
+                    <div class="flex-1">
+                            <input type="radio" name="weather" id="weather_sunny" value="sunny">
+                            <label for="weather_sunny">
+                                맑음
+                            </label>
+                            <input type="radio" name="weather" id="weather_foggy" value="foggy">
+                            <label for="weather_foggy">
+                                안개
+                            </label>
+                            <input type="radio" name="weather" id="weather_rainy" value="rainy">
+                            <label for="weather_rainy">
+                                비옴
+                            </label>
+                            <input type="radio" name="weather" id="weather_cloud" value="cloud">
+                            <label for="weather_cloud">
+                                흐림
+                            </label>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <label for="title" class="flex-1" value= "${date.title}">제목</label>
+                    <input type="text" name="title" class="flex-3" id="title">
+                </div>
+                <div class="d-flex">
+                    <label for="body" class="flex-1" value = "${date.content}">내용</label>
+                    <textarea rows="10" cols="20" class="flex-3" id="body"></textarea>
+                </div>
+                <div class="flex-end gap-1 d-flex">
+                    <button type="submit" class="btn">등록</button>
+
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; copyright</p>
+    </footer>
+    <script src="script/write_diary.js"></script>
+</body>
+
+</html>
